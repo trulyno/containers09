@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Mood Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Mood Tracker</h1>
+            <p class="tagline">Track how you feel, see your mood patterns</p>
+        </header>
+
+        <main>
+            <section class="mood-selector">
+                <h2>How are you feeling today?</h2>
+                <div class="mood-buttons">
+                    <button id="happy" class="mood-btn">
+                        <span class="emoji">😀</span>
+                        <span class="label">Happy</span>
+                    </button>
+                    <button id="neutral" class="mood-btn">
+                        <span class="emoji">😐</span>
+                        <span class="label">Neutral</span>
+                    </button>
+                    <button id="sad" class="mood-btn">
+                        <span class="emoji">😔</span>
+                        <span class="label">Sad</span>
+                    </button>
+                </div>
+                <div class="message-box" id="message"></div>
+            </section>
+
+            <section class="mood-history">
+                <h2>Your Mood History</h2>
+                <div class="history-container" id="history-container">
+                    <!-- Mood history will be displayed here -->
+                    <p class="empty-state">Your mood history will appear here</p>
+                </div>
+            </section>
+
+            <section class="mood-stats">
+                <h2>Your Mood Stats</h2>
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <h3>Happy Days</h3>
+                        <p id="happy-count">0</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Neutral Days</h3>
+                        <p id="neutral-count">0</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Sad Days</h3>
+                        <p id="sad-count">0</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mood-canvas">
+                <h2>Mood Animation</h2>
+                <canvas id="mood-animation" width="300" height="200"></canvas>
+                <button id="animate-btn">Animate Your Moods</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ by Mood Tracker</p>
+            <button id="clear-data">Clear All Data</button>
+        </footer>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
